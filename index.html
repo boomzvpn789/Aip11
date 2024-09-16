@@ -3,25 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
-    <link rel="stylesheet" href="style.css">
+    <title>VPN Service</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Login</h1>
-        <form id="loginForm">
-            <div>
-                <label for="username">Username</label>
-                <input type="text" id="username" name="username" required>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="login-signup">
+                <a href="#login">Login</a>
+                <a href="#signup" class="signup-btn">Sign Up</a>
             </div>
-            <div>
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password" required>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="intro">
+            <h1>Secure Your Internet with Our VPN</h1>
+            <p>Experience a fast, secure, and private VPN service for your browsing needs.</p>
+            <a href="#signup" class="cta-btn">Get Started</a>
+        </div>
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="services-list">
+            <div class="service">
+                <h3>Secure Browsing</h3>
+                <p>Protect your online activity with military-grade encryption.</p>
             </div>
-            <button type="submit">Login</button>
-        </form>
-        <p id="message"></p>
-    </div>
+            <div class="service">
+                <h3>Fast Connection</h3>
+                <p>Enjoy lightning-fast connection speeds with unlimited bandwidth.</p>
+            </div>
+            <div class="service">
+                <h3>Global Access</h3>
+                <p>Access content from anywhere in the world with our global server network.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing">
+        <h2>Pricing</h2>
+        <div class="pricing-plans">
+            <div class="plan">
+                <h3>Basic Plan</h3>
+                <p>$5/month</p>
+                <a href="#signup" class="btn">Sign Up</a>
+            </div>
+            <div class="plan">
+                <h3>Premium Plan</h3>
+                <p>$10/month</p>
+                <a href="#signup" class="btn">Sign Up</a>
+            </div>
+            <div class="plan">
+                <h3>Pro Plan</h3>
+                <p>$15/month</p>
+                <a href="#signup" class="btn">Sign Up</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 VPN Service. All Rights Reserved.</p>
+    </footer>
 
     <script src="app.js"></script>
 </body>
